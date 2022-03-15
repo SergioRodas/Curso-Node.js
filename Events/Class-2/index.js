@@ -3,11 +3,11 @@ const { SAVE } = require('./event-names')
 
 const emitter = new EventEmitter();
 
-emitter.on('save', () => {
+emitter.on(SAVE, () => {
     console.log('On save activated 1');
 })
 
-emitter.on('save', () => {
+emitter.on(SAVE, () => {
     console.log('On save activated 2');
 })
 
